@@ -1,6 +1,6 @@
 namespace SolutionName.Workers.WorkerD;
 
-public class Program
+public static class Program
 {
     public static void Main(string[] args)
     {

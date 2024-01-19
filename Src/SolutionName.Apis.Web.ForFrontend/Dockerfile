@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Src/SolutionName.Web.ForFrontend/SolutionName.Web.ForFrontend.csproj", "Src/SolutionName.Web.ForFrontend/"]
-RUN dotnet restore "./Src/SolutionName.Web.ForFrontend/./SolutionName.Web.ForFrontend.csproj"
+COPY ["Src/SolutionName.Apis.Web.ForFrontend/SolutionName.Apis.Web.ForFrontend.csproj", "Src/SolutionName.Apis.Web.ForFrontend/"]
+RUN dotnet restore "./Src/SolutionName.Apis.Web.ForFrontend/./SolutionName.Apis.Web.ForFrontend.csproj"
 COPY . .
-WORKDIR "/src/Src/SolutionName.Web.ForFrontend"
-RUN dotnet build "./SolutionName.Web.ForFrontend.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Src/SolutionName.Apis.Web.ForFrontend"
+RUN dotnet build "./SolutionName.Apis.Web.ForFrontend.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./SolutionName.Web.ForFrontend.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./SolutionName.Apis.Web.ForFrontend.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SolutionName.Web.ForFrontend.dll"]
+ENTRYPOINT ["dotnet", "SolutionName.Apis.Web.ForFrontend.dll"]

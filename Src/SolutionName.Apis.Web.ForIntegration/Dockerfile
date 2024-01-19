@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["SolutionName.Web.ForIntegration/SolutionName.Web.ForIntegration.csproj", "SolutionName.Web.ForIntegration/"]
-RUN dotnet restore "./SolutionName.Web.ForIntegration/./SolutionName.Web.ForIntegration.csproj"
+COPY ["SolutionName.Apis.Web.ForIntegration/SolutionName.Apis.Web.ForIntegration.csproj", "SolutionName.Apis.Web.ForIntegration/"]
+RUN dotnet restore "./SolutionName.Apis.Web.ForIntegration/./SolutionName.Apis.Web.ForIntegration.csproj"
 COPY . .
-WORKDIR "/src/SolutionName.Web.ForIntegration"
-RUN dotnet build "./SolutionName.Web.ForIntegration.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/SolutionName.Apis.Web.ForIntegration"
+RUN dotnet build "./SolutionName.Apis.Web.ForIntegration.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./SolutionName.Web.ForIntegration.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./SolutionName.Apis.Web.ForIntegration.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SolutionName.Web.ForIntegration.dll"]
+ENTRYPOINT ["dotnet", "SolutionName.Apis.Web.ForIntegration.dll"]
