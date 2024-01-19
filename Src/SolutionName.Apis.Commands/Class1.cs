@@ -1,4 +1,3 @@
-﻿namespace SolutionName.Apis.Commands
-{
-    public class Class1 { }
-}
+﻿namespace SolutionName.Apis.Commands;
+
+public class Class1 { }

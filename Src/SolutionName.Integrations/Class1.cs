@@ -1,4 +1,3 @@
-﻿namespace SolutionName.Integrations
-{
-    public class Class1 { }
-}
+﻿namespace SolutionName.Integrations;
+
+public class Class1 { }

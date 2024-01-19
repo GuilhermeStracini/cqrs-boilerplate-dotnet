@@ -1,4 +1,3 @@
-﻿namespace SolutionName.Infrastructure
-{
-    public class Class1 { }
-}
+﻿namespace SolutionName.Infrastructure;
+
+public class Class1 { }

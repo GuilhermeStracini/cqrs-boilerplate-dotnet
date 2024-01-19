@@ -1,4 +1,3 @@
-﻿namespace SolutionName.Shared
-{
-    public class Class1 { }
-}
+﻿namespace SolutionName.Shared;
+
+public class Class1 { }

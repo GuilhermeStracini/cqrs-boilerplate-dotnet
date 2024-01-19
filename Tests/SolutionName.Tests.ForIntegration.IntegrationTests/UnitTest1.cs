@@ -1,19 +1,18 @@
 using FluentAssertions;
 
-namespace SolutionName.Tests.ForIntegration.IntegrationTests
+namespace SolutionName.Tests.ForIntegration.IntegrationTests;
+
+public class UnitTest1
 {
-    public class UnitTest1
+    [Fact]
+    public void Test1()
     {
-        [Fact]
-        public void Test1()
-        {
-            // Arrange
-            var expected = "Hello World!";
+        // Arrange
+        var expected = "Hello World!";
 
-            // Act
+        // Act
 
-            // Assert
-            expected.Should().Be("Hello World!");
-        }
+        // Assert
+        expected.Should().Be("Hello World!");
     }
 }

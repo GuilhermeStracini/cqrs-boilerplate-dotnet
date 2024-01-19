@@ -1,4 +1,3 @@
-﻿namespace SolutionName.Domain
-{
-    public class Class1 { }
-}
+﻿namespace SolutionName.Domain;
+
+public class Class1 { }
