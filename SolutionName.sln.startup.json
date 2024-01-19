@@ -1,0 +1,39 @@
+{
+  "Version": 3,
+  "ListAllProjects": false,
+  "MultiProjectConfigurations": {
+    "BFF + Worker": {
+      "Projects": {
+        "SolutionName.Apis.Web.ForFrontend": {
+          "ProfileName": "https"
+        },
+        "SolutionName.Workers.WorkerD": {
+          "ProfileName": "SolutionName.Workers.WorkerD"
+        }
+      }
+    },
+    "BFI + Worker": {
+      "Projects": {
+        "SolutionName.Apis.Web.ForIntegration": {
+          "ProfileName": "https"
+        },
+        "SolutionName.Workers.WorkerD": {
+          "ProfileName": "SolutionName.Workers.WorkerD"
+        }
+      }
+    },
+    "BFF + BFI + Worker": {
+      "Projects": {
+        "SolutionName.Apis.Web.ForFrontend": {
+          "ProfileName": "https"
+        },
+        "SolutionName.Apis.Web.ForIntegration": {
+          "ProfileName": "https"
+        },
+        "SolutionName.Workers.WorkerD": {
+          "ProfileName": "SolutionName.Workers.WorkerD"
+        }
+      }
+    }
+  }
+}
