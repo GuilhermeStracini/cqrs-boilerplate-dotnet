@@ -1,0 +1,6 @@
+@SolutionName.Web.ForFrontend_HostAddress = http://localhost:5296
+
+GET {{SolutionName.Web.ForFrontend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

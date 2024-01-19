@@ -1,0 +1,6 @@
+@SolutionName.Web.ForIntegration_HostAddress = http://localhost:5192
+
+GET {{SolutionName.Web.ForIntegration_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
