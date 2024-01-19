@@ -9,6 +9,8 @@
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.16.0.82469" />
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageVersion Include="xunit" Version="2.6.6" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.6" />
