@@ -2,10 +2,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SolutionName.Apis.Web.ForFrontend.Controllers;
 
+/// <summary>
+/// Class WeatherForecastController.
+/// </summary>
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
+    /// <summary>
+    /// The summaries
+    /// </summary>
     private static readonly string[] Summaries =
     [
         "Freezing",
@@ -20,13 +26,24 @@ public class WeatherForecastController : ControllerBase
         "Scorching"
     ];
 
+    /// <summary>
+    /// The logger
+    /// </summary>
     private readonly ILogger<WeatherForecastController> _logger;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="WeatherForecastController"/> class.
+    /// </summary>
+    /// <param name="logger">The logger.</param>
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
     }
 
+    /// <summary>
+    /// Gets this instance.
+    /// </summary>
+    /// <returns>System.Collections.Generic.IEnumerable&lt;SolutionName.Apis.Web.ForFrontend.WeatherForecast&gt;.</returns>
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
