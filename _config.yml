@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: CQRS (API + Worker) Boilerplate .NET
+description: A repository template for .NET CQRS (API + Worker) projects.
+logo: https://raw.githubusercontent.com/GuilhermeStracini/cqrs-boilerplate-dotnet/main/logo.png
+show_downloads: true
