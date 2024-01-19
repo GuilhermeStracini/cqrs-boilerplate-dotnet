@@ -7,7 +7,7 @@ namespace SolutionName.Apis.Web.ForFrontend.Controllers;
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries =
-    {
+    [
         "Freezing",
         "Bracing",
         "Chilly",
@@ -18,7 +18,7 @@ public class WeatherForecastController : ControllerBase
         "Hot",
         "Sweltering",
         "Scorching"
-    };
+    ];
 
     private readonly ILogger<WeatherForecastController> _logger;
 
@@ -35,7 +35,7 @@ public class WeatherForecastController : ControllerBase
             .Range(1, 5)
             .Select(index => new WeatherForecast
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                Date = DateOnly.FromDateTime(DateTime.UtcNow.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
