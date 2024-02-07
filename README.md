@@ -6,7 +6,7 @@
 
 ## About
 
-This is a **template repository** that sets the basic code and infrastructure for a repository/solution in **.NET C#** to create an **CQRS project with API and worker**.
+This is a **template repository** that sets the basic code and infrastructure for a repository/solution in **.NET C#** to create a **CQRS project with API and worker**.
 
 ---
 
@@ -43,4 +43,4 @@ This is a **template repository** that sets the basic code and infrastructure fo
 
 Licensed under: **MIT license** ([LICENSE](https://github.com/guibranco/cqrs-boilerplate-dotnet/blob/main/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)).
 
-This will be also the **LICENSE** of your API client wrapper / SDK, but you are free to change it for another that suits your needs.
+This will also be the **LICENSE** of your project, but you are free to change it for another that suits your needs.
