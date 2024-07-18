@@ -12,6 +12,7 @@ jobs:
     name: SonarCloud Analysis
     runs-on: windows-latest
     steps:
+    
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
