@@ -10,7 +10,9 @@ This is a **template repository** that sets the basic code and infrastructure fo
 
 > [!Note]
 >
-> A [appveyor.yml](appveyor.yml) file is included for [AppVeyor](https://www.appveyor.com/) CI pipeline. AppVeyor is free for open-source projects. For closed-source projects, consider a paid subscription or other CI tools (GitHub Actions, CircleCI, TeamCity).
+> A [appveyor.yml](appveyor.yml) file is included for [AppVeyor](https://www.appveyor.com/) CI pipeline.
+> AppVeyor is free for open-source projects.
+> For closed-source projects, consider a paid subscription or other CI tools (GitHub Actions, CircleCI, TeamCity).
 
 ---
 
