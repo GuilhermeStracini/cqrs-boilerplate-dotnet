@@ -8,8 +8,10 @@
 
 This is a **template repository** that sets the basic code and infrastructure for a repository/solution in **.NET C#** to create a **CQRS project with API and worker**.
 
-There is already a [appveyor.yml](appveyor.yml) file if you want to use [AppVeyor](https://www.appveyor.com/) CI pipeline to build your project. AppVeyor is free for open-source projects and a good choice for .NET projects.
-If you are creating a closed-source project, you might need a paid subscription from AppVeyor or use any other CI tool (GitHub Actions, CircleCI, TeamCity).
+> [!Note]
+>
+> A [appveyor.yml](appveyor.yml) file is included for [AppVeyor](https://www.appveyor.com/) CI pipeline. AppVeyor is free for open-source projects. For closed-source projects, consider a paid subscription or other CI tools (GitHub Actions, CircleCI, TeamCity).
+
 ---
 
 ## Instructions
