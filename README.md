@@ -14,6 +14,9 @@ If you are creating a closed-source project, you might need a paid subscription 
 
 ## Instructions
 
+> [!Warning]
+> The automated process listed below now supports **Windows** and **Linux/MAC** environments.
+
 ### Automated process
 
 - Click on the green button **USE THIS TEMPLATE**.
