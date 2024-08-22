@@ -3,6 +3,9 @@ skip_tags: true
 image: Visual Studio 2022
 configuration: Release
 
+- ps: if(-Not $env:APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME -Eq $env:APPVEYOR_REPO_NAME) {
+    // Execute the action
+    codeclimate-test-reporter upload-coverage -i "Tests\%SOLUTION_NAME%.UnitTests\code-climate.json" -r %CODECLIMATE_TOKEN%
 environment:
   CODACY_PROJECT_TOKEN:
     secure: <secure token from Codacy>
