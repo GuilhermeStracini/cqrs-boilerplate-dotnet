@@ -41,9 +41,17 @@ public class WeatherForecastController : ControllerBase
     }
 
     /// <summary>
-    /// Gets this instance.
+    /// Retrieves a collection of weather forecasts for the upcoming days.
     /// </summary>
-    /// <returns>System.Collections.Generic.IEnumerable&lt;SolutionName.Apis.Web.ForFrontend.WeatherForecast&gt;.</returns>
+    /// <returns>
+    /// An enumerable collection of <see cref="WeatherForecast"/> objects, each representing the weather forecast for a specific day.
+    /// </returns>
+    /// <remarks>
+    /// This method handles HTTP GET requests to the "GetWeatherForecast" endpoint. It logs the request using the provided logger and generates a list of weather forecasts for the next five days.
+    /// Each forecast includes a date, a randomly generated temperature in Celsius, and a summary that describes the weather conditions.
+    /// The temperature is generated within a range of -20 to 55 degrees Celsius, and the summary is selected randomly from a predefined array of summaries.
+    /// The method returns the forecasts as an array, ensuring that the caller receives a complete set of data in a single response.
+    /// </remarks>
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
