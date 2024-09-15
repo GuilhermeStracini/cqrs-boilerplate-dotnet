@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+
 namespace SolutionName.Workers.WorkerDaemon;
 
 /// <summary>
