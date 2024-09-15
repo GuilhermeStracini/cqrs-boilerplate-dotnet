@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionName.Apis.Web.ForFr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionName.Apis.Web.ForIntegration", "Src\SolutionName.Apis.Web.ForIntegration\SolutionName.Apis.Web.ForIntegration.csproj", "{10DE87E8-00D9-4F9F-A169-39C1EAA4D956}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionName.Workers.WorkerD", "Src\SolutionName.Workers.WorkerD\SolutionName.Workers.WorkerD.csproj", "{4E87F768-827F-4576-B2D3-A1540DD6E146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionName.Workers.WorkerDaemon", "Src\SolutionName.Workers.WorkerDaemon\SolutionName.Workers.WorkerDaemon.csproj", "{4E87F768-827F-4576-B2D3-A1540DD6E146}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{1D275CBC-D82E-402E-8CAE-02DF4312820D}"
 EndProject
