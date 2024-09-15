@@ -1,8 +1,11 @@
-namespace SolutionName.Workers.WorkerD;
+using System.Diagnostics.CodeAnalysis;
+
+namespace SolutionName.Workers.WorkerDaemon;
 
 /// <summary>
 /// Class Program.
 /// </summary>
+[ExcludeFromCodeCoverage]
 public static class Program
 {
     /// <summary>

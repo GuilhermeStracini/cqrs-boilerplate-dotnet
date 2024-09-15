@@ -1,12 +1,15 @@
-namespace SolutionName.Workers.WorkerD;
+using System.Diagnostics.CodeAnalysis;
+
+namespace SolutionName.Workers.WorkerDaemon;
 
 /// <summary>
 /// Class Worker.
 /// </summary>
+[ExcludeFromCodeCoverage]
 public class Worker : BackgroundService
 {
     /// <summary>
-    /// The logger
+    /// The logger.
     /// </summary>
     private readonly ILogger<Worker> _logger;
 
