@@ -1,4 +1,4 @@
-namespace SolutionName.Workers.WorkerD;
+namespace SolutionName.Workers.WorkerDaemon;
 
 /// <summary>
 /// Class Worker.
