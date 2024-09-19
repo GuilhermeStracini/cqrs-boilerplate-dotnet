@@ -74,9 +74,9 @@ mv "$MainProjectFile" "$SolutionName.csproj"
 mv "$IntegrationTestProjectFile" "$SolutionName.IntegrationTests.csproj"
 mv "$UnitTestProjectFile" "$SolutionName.Tests.csproj"
 
-mv "Src/SolutionName" "$SolutionName"
-mv "Tests/SolutionName.IntegrationTests" "$SolutionName.IntegrationTests"
-mv "Tests/SolutionName.Tests" "$SolutionName.Tests"
+mv "Src/SolutionName" "Src/$SolutionName"
+mv "Tests/SolutionName.IntegrationTests" "Tests/$SolutionName.IntegrationTests"
+mv "Tests/SolutionName.Tests" "Tests/$SolutionName.Tests"
 
 rm initial-setup.bat
 rm initial-setup.ps1
