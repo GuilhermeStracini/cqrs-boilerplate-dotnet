@@ -70,9 +70,9 @@ sed -i "s/{repo}/$GitHubRepo/g" "$MainProjectFile"
 sed -i "s/{companyName}/$CompanyName/g" "$MainProjectFile"
 sed -i "s/{project description}/$ProjectDescription/g" "$MainProjectFile"
 
-mv "$MainProjectFile" "$SolutionName.csproj"
-mv "$IntegrationTestProjectFile" "$SolutionName.IntegrationTests.csproj"
-mv "$UnitTestProjectFile" "$SolutionName.Tests.csproj"
+mv "$MainProjectFile" "Src/SolutionName/$SolutionName.csproj"
+mv "$IntegrationTestProjectFile" "Tests/SolutionName.IntegrationTests/$SolutionName.IntegrationTests.csproj"
+mv "$UnitTestProjectFile" "Tests/SolutionName.Tests/$SolutionName.Tests.csproj"
 
 mv "Src/SolutionName" "Src/$SolutionName"
 mv "Tests/SolutionName.IntegrationTests" "Tests/$SolutionName.IntegrationTests"
