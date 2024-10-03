@@ -26,8 +26,6 @@ echo "Codacy secure token (AppVeyor):"
 read CodacyToken
 echo "Code Climate secure token (AppVeyor):"
 read CodeClimateToken
-echo "Sonar Cloud secure token (AppVeyor):"
-read SonarCloudToken
 
 MainProjectFile="Src/$SolutionName/$SolutionName.csproj"
 IntegrationTestProjectFile="Tests/$SolutionName.IntegrationTests/$SolutionName.IntegrationTests.csproj"
@@ -56,7 +54,6 @@ sed -i "s/GuilhermeStracini/cqrs-boilerplate-dotnet/$GitHubUsername/$GitHubRepo/
 
 sed -i "s/<secure token from Codacy>/$CodacyToken/g" appveyor.yml
 sed -i "s/<secure token from CodeClimate>/$CodeClimateToken/g" appveyor.yml
-sed -i "s/<secure token from Sonar Cloud>/$SonarCloudToken/g" appveyor.yml
 
 find . -type f -name "*.cs*" -exec sed -i "s/SolutionName/$SolutionName/g" {} \;
 
