@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup Label="SDK Versions">
-    <DotNetVersion>net8.0</DotNetVersion>
+    <DotNetVersion>net9.0</DotNetVersion>
   </PropertyGroup>
 
   <PropertyGroup Label="NuGet package">
