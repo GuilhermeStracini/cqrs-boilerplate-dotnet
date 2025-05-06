@@ -2,7 +2,6 @@
   <PropertyGroup Label="SDK Versions">
     <DotNetVersion>net9.0</DotNetVersion>
   </PropertyGroup>
-
   <PropertyGroup Label="NuGet package">
     <Authors>{{username}}</Authors>
     <Company></Company>
@@ -16,7 +15,6 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
-
   <PropertyGroup Label="Build">
     <UpdateVersionProperties>true</UpdateVersionProperties>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -36,13 +34,19 @@
     <GenerateDependencyFile>true</GenerateDependencyFile>
     <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
   </PropertyGroup>
-
   <PropertyGroup Label="Analysis settings">
     <AnalysisLevel>latest-Recommended</AnalysisLevel>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="all" Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'" />
-    <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="all" Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'" />
+    <PackageReference
+      Include="StyleCop.Analyzers"
+      PrivateAssets="all"
+      Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'"
+    />
+    <PackageReference
+      Include="SonarAnalyzer.CSharp"
+      PrivateAssets="all"
+      Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'"
+    />
   </ItemGroup>
 </Project>
