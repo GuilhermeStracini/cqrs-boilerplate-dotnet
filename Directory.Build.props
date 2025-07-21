@@ -38,15 +38,7 @@
     <AnalysisLevel>latest-Recommended</AnalysisLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference
-      Include="StyleCop.Analyzers"
-      PrivateAssets="all"
-      Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'"
-    />
-    <PackageReference
-      Include="SonarAnalyzer.CSharp"
-      PrivateAssets="all"
-      Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'"
-    />
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="all" Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'" />
+    <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="all" Condition="$(MSBuildProjectExtension) == '.csproj' And $(IsTestProject) != 'true'" />
   </ItemGroup>
 </Project>
