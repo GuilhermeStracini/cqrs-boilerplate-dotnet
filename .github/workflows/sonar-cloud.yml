@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin' # Use whatever distribution you want. I prefer Temurin or Zulu. Feel free to use any other (check SonarCloud for supported distributions and versions).
           java-version: 21
       
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       
