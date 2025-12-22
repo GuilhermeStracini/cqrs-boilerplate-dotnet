@@ -12,7 +12,7 @@
       Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets"
       Version="1.21.0"
     />
-    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.16.1.129956" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.17.0.131074" />
     <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="9.0.3" />
     <PackageVersion Include="xunit" Version="2.9.3" />
